@@ -1,7 +1,6 @@
 theme: jekyll-theme-minimal
 title: Welcome To My Online Resume!
 # These settings help remove GitHub-specific links and branding
-show_downloads: false
 github:
   is_project_page: false
   repository_url: ""
