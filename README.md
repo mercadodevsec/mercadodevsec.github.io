@@ -42,7 +42,7 @@ B.S. Information Technology (Senior) · GPA: 3.96
 
 ## 📁 Projects
 
-### FinCal: Financial Calculator App
+### FinCal: Financial Calculator App -- Link --> https://github.com/mercadodevsec/FinCal
 *Java/Kotlin · Android*
 
 - Building an Android app with 30+ financial calculators covering mortgage, investment, retirement, and tax planning
@@ -95,6 +95,3 @@ B.S. Information Technology (Senior) · GPA: 3.96
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/john-micah-mercado-03611624a/)
 
----
-
-*This site is automatically generated from my README.md using GitHub Pages.*
