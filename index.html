@@ -9,7 +9,7 @@
     <style>
         body {
             background-color: #1A2A3A; /* Sets background to your dark slate blue */
-            color: #FFFFFF;            /* Sets text to white so it is easy to read */
+            color: #000000;            /* Changed to black for main content */
             font-family: sans-serif;   /* Makes the text look clean and modern */
         }
     </style>
@@ -49,7 +49,7 @@
         
         .main-content h2 {
             color: #1A2A3A;
-            border-bottom: 3px solid #1A2A3A;  /* ← Change this color */
+            border-bottom: 3px solid #1A2A3A;
             padding-bottom: 8px;
         }
 
@@ -61,7 +61,7 @@
         }
 
         .fixed-header .tagline {
-            color: #1A2A3A !important;
+            color: #94a3b8 !important;  /* Changed from #1A2A3A to match other header text */
             font-size: 0.9rem;
             margin-top: 5px;
         }
@@ -99,6 +99,7 @@
             max-width: 800px;
             background-color: #f0f4f8;
             min-height: 100vh;
+            color: #000000;  /* Ensures all main content text is black */
         }
 
         /* ===== RESPONSIVE: Stack on mobile ===== */
@@ -167,6 +168,22 @@
         .about-card span {
             font-size: 0.95rem;
             color: #2d3f52;
+        }
+
+        /* ===== ADDITIONAL: Make all paragraph and list text black ===== */
+        .main-content p,
+        .main-content li,
+        .main-content ul,
+        .main-content ol,
+        .main-content h3 {
+            color: #000000;
+        }
+
+        /* Keep sidebar header text white */
+        .fixed-header p,
+        .fixed-header li,
+        .fixed-header ul {
+            color: #ffffff;
         }
     </style>
 </head>
