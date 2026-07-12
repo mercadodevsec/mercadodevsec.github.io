@@ -3,6 +3,22 @@
   body {
     background-color: #f0f4f8 !important;
   }
+  /* Change the website title color */
+.fixed-header h1 {
+  color: #1A2A3A !important;  /* ← Change this color */
+}
+
+/* OR if you're using the Minimal theme's default title */
+.site-title {
+  color: #fbbf24 !important;
+}
+
+/* OR to be safe, target both */
+.fixed-header h1,
+.site-title,
+.page-header {
+  color: #fbbf24 !important;
+}
 
   /* ===== FIXED HEADER ON THE LEFT ===== */
   .fixed-header {
@@ -179,13 +195,13 @@
 
 
 
-## 👨‍💻 About Me
+# 👨‍💻 About Me
 
 I'm a senior IT student at the University of North Florida, maintaining a 3.96 GPA while blending strong software engineering skills in Java, Kotlin, C++, and C# with a genuine interest in full stack development and cybersecurity. I have built projects ranging from a multithreaded socket server and custom data structures to an Android financial calculator and customer churn prediction pipelines, which have given me hands-on experience across both application development and data processing. I also hold a CompTIA Security+ certification and have completed hands-on cybersecurity labs in my coursework, which keeps me grounded in real-world defense principles and reminds me that great engineering is not just about writing code, but about building resilient, efficient, and thoughtful solutions.
 
 
 
-## 🎓 <h2>Education</h2>
+# 🎓 Education
 
 **University of North Florida** · Jacksonville, FL  
 B.S. Information Technology (Senior) · GPA: 3.96  
@@ -194,7 +210,7 @@ B.S. Information Technology (Senior) · GPA: 3.96
 **Relevant Coursework:** Computer Networks, Cloud Computing, Cybersecurity Systems, Intrusion Detection, Forensics, Systems Administration, Computer Programming, IT Project Management
 
 
-## 📁 Projects
+# 📁 Projects
 
 ### FinCal: Financial Calculator App → [Check the App here](https://github.com/mercadodevsec/FinCal)
 *Java/Kotlin · Android*
@@ -227,14 +243,14 @@ B.S. Information Technology (Senior) · GPA: 3.96
 - Implemented file input/output operations
 
 
-## 🛠️ Skills
+# 🛠️ Skills
 
 **Languages:** Java, Kotlin, C++, C#  
 **Technologies:** Android Development, Jetpack Compose, Multithreading, Socket Programming, Git/GitHub, Linux  
 **Office:** Microsoft Excel, Word, Access
 
 
-## 📜 Certifications
+# 📜 Certifications
 
 - CompTIA Security+ (December 2024)
 - Excel White Belt – McGraw Hill
