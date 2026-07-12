@@ -34,7 +34,7 @@
   color: #1A2A3A;
   border-bottom: 3px solid #2563eb;  /* ← Change this color */
   padding-bottom: 8px;
-}
+  }
 
   .fixed-header h3 {
     color: #94a3b8 !important;
