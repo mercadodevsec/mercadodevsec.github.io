@@ -1,6 +1,6 @@
 <!-- ===== PROFILE HEADER ===== -->
 <p align="center">
-  <img src="profile.jpg" width="180" style="border-radius: 50%;" />
+  <img src="profile.jpg" width="180" style="border-radius: 50%; border: 4px solid #2563eb;" />
 </p>
 
 <h1 align="center">John Micah Mercado</h1>
