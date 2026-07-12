@@ -169,34 +169,13 @@
 </div>
 
 <!-- ===== MAIN CONTENT ===== -->
-<div class="main-content">
+<div class="main-content" markdown="1">
 
 ---
 
 ## 👨‍💻 About Me
 
-I'm a software-focused IT senior at the University of North Florida (**3.96 GPA**) with hands-on experience in **Java, Kotlin, C++, and C#**. I enjoy independently designing and shipping functional software — from Android apps to backend servers and data pipelines.
-
-<div class="about-grid">
-  <div class="about-card">
-    <strong>📱 Android</strong>
-    <span>FinCal · 30+ calculators</span>
-  </div>
-  <div class="about-card">
-    <strong>⚙️ Backend</strong>
-    <span>Socket servers · Multithreading</span>
-  </div>
-  <div class="about-card">
-    <strong>📊 Data</strong>
-    <span>Churn pipelines · C# analysis</span>
-  </div>
-  <div class="about-card">
-    <strong>🔒 Security</strong>
-    <span>CompTIA Security+ · Intrusion Detection</span>
-  </div>
-</div>
-
-**Currently exploring:** Cloud computing (AWS, Azure), AI-assisted development, and modern Android architecture.
+I'm a senior IT student at the University of North Florida with a 3.96 GPA. and strong experience in **Java, Kotlin, C++, and C#**. I've built a multithreaded socket server, custom data structures, and data-driven applications — from Android financial calculators to customer churn pipelines. I also hold **CompTIA Security+** and have completed hands-on cybersecurity labs.
 
 ---
 
