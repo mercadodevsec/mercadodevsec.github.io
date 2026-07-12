@@ -7,10 +7,10 @@
 <h3 align="center">IT Senior · University of North Florida · 3.96 GPA</h3>
 
 <p align="center">
-  <a href="https://github.com/yourusername">
+  <a href="https://github.com/mercadodevsec">
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
   </a>
-  <a href="https://linkedin.com/in/yourprofile">
+  <a href="https://www.linkedin.com/in/john-micah-mercado-03611624a/">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
   <a href="mailto:mikkomercado97@gmail.com">
