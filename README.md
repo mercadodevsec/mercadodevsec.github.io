@@ -185,7 +185,7 @@ I'm a senior IT student at the University of North Florida, maintaining a 3.96 G
 
 
 
-## 🎓 Education
+## 🎓 <h2>Education</h2>
 
 **University of North Florida** · Jacksonville, FL  
 B.S. Information Technology (Senior) · GPA: 3.96  
