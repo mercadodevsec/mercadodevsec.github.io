@@ -1,26 +1,3 @@
-<!-- ===== PROFILE HEADER ===== -->
-<p align="center">
-  <img src="profile.jpg" width="180" style="border-radius: 50%; border: 4px solid #2563eb;" />
-</p>
-
-<h1 align="center">John Micah Mercado</h1>
-<h3 align="center">IT Senior · University of North Florida · 3.96 GPA</h3>
-
-<p align="center">
-  <a href="https://github.com/mercadodevsec">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
-  </a>
-  <a href="https://www.linkedin.com/in/john-micah-mercado-03611624a/">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  <a href="mailto:mikkomercado97@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>
-</p>
-
-<hr />
-
-<!-- ===== REST OF YOUR CONTENT BELOW ===== -->
 
 ---
 
