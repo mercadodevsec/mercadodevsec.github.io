@@ -32,7 +32,7 @@
   
   .main-content h2 {
   color: #1A2A3A;
-  border-bottom: 3px solid #2563eb;  /* ← Change this color */
+  border-bottom: 3px solid #1A2A3A;  /* ← Change this color */
   padding-bottom: 8px;
   }
 
@@ -44,7 +44,7 @@
   }
 
   .fixed-header .tagline {
-    color: #94a3b8 !important;
+    color: #1A2A3A !important;
     font-size: 0.9rem;
     margin-top: 5px;
   }
