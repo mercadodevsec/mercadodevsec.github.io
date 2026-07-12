@@ -1,75 +1,151 @@
 <style>
-  /* Make the header fixed at the top */
+  /* ===== CUSTOM BACKGROUND COLOR ===== */
+  body {
+    background-color: #f0f4f8 !important;
+  }
+
+  /* ===== FIXED HEADER ON THE LEFT ===== */
   .fixed-header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    background: white;
-    padding: 15px 0 10px 0;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    border-bottom: 3px solid #2563eb;
-  }
-
-  /* Push the rest of the content down so it doesn't hide behind the header */
-  .content {
-    margin-top: 280px; /* Adjust this value based on your header height */
-  }
-
-  /* Make sure the header content stays centered */
-  .fixed-header .header-inner {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
+    width: 320px;
+    height: 100vh; /* Full viewport height */
+    background: #1a2a3a; /* Dark sidebar background */
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    box-shadow: 2px 0 15px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    overflow-y: auto;
   }
 
-  /* For mobile responsiveness */
-  @media (max-width: 600px) {
-    .content {
-      margin-top: 240px;
-    }
+  /* ===== HEADER TEXT COLORS ===== */
+  .fixed-header h1 {
+    color: #ffffff !important;
+    font-size: 1.8rem;
+    margin: 15px 0 5px 0;
+  }
+
+  .fixed-header h3 {
+    color: #94a3b8 !important;
+    font-size: 1rem;
+    margin: 5px 0;
+    font-weight: 400;
+  }
+
+  .fixed-header .tagline {
+    color: #94a3b8 !important;
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+
+  /* ===== PROFILE PHOTO IN HEADER ===== */
+  .fixed-header .profile-photo {
+    border-radius: 50%;
+    border: 4px solid #2563eb;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  /* ===== SOCIAL LINKS IN HEADER ===== */
+  .fixed-header .social-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .fixed-header .social-links a {
+    display: inline-block;
+  }
+
+  .fixed-header .social-links img {
+    height: 32px;
+  }
+
+  /* ===== MAIN CONTENT (Shifts to the right) ===== */
+  .main-content {
+    margin-left: 340px; /* Width of sidebar + gap */
+    padding: 40px 50px 40px 30px;
+    max-width: 800px;
+    background-color: #f0f4f8;
+    min-height: 100vh;
+  }
+
+  /* ===== RESPONSIVE: Stack on mobile ===== */
+  @media (max-width: 768px) {
     .fixed-header {
-      padding: 10px 0;
+      position: relative;
+      width: 100%;
+      height: auto;
+      min-height: 100vh;
+      padding: 30px 20px;
+      flex-direction: column;
     }
+    
+    .main-content {
+      margin-left: 0;
+      padding: 30px 20px;
+    }
+    
+    .fixed-header .profile-photo {
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+  /* ===== STYLING FOR YOUR CONTENT ===== */
+  .main-content h2 {
+    color: #1a2a3a;
+    border-bottom: 3px solid #2563eb;
+    padding-bottom: 8px;
+  }
+
+  .main-content a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+
+  .main-content a:hover {
+    text-decoration: underline;
+  }
+
+  .main-content hr {
+    border: 1px solid #d1d9e6;
+    margin: 30px 0;
   }
 </style>
 
-<!-- ===== FIXED PROFILE HEADER ===== -->
+<!-- ===== FIXED LEFT HEADER ===== -->
 <div class="fixed-header">
-  <div class="header-inner">
-    <p align="center" style="margin: 0;">
-      <img src="profile.jpg" width="120" style="border-radius: 50%; border: 4px solid #2563eb;" />
-    </p>
-    <h1 align="center" style="margin: 5px 0 0 0; font-size: 1.8rem;">John Micah Mercado</h1>
-    <h3 align="center" style="margin: 2px 0 0 0; font-size: 1rem;">IT Senior · University of North Florida · 3.96 GPA</h3>
-    <p align="center" style="margin: 5px 0 0 0;">
-      <a href="https://github.com/mercadodevsec">
-        <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
-      </a>
-      <a href="https://www.linkedin.com/in/john-micah-mercado-03611624a/">
-        <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
-      </a>
-      <a href="mailto:mikkomercado97@gmail.com">
-        <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-      </a>
-    </p>
+  <img src="profile.jpg" alt="John Micah Mercado" class="profile-photo" />
+  
+  <h1>John Micah Mercado</h1>
+  <h3>IT Senior · University of North Florida</h3>
+  <p class="tagline">3.96 GPA · CompTIA Security+</p>
+  
+  <div class="social-links">
+    <a href="https://github.com/mercadodevsec">
+      <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+    </a>
+    <a href="https://www.linkedin.com/in/john-micah-mercado-03611624a/">
+      <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+    </a>
+    <a href="mailto:mikkomercado97@gmail.com">
+      <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+    </a>
   </div>
 </div>
 
-<!-- ===== REST OF YOUR CONTENT ===== -->
-<div class="content">
+<!-- ===== MAIN CONTENT ===== -->
+<div class="main-content">
 
-## About Me
-
-Software-focused Information Technology senior...
-
-<!-- The rest of your README content goes here -->
-
-</div>
-
-<!-- ===== REST OF YOUR CONTENT BELOW ===== -->
 ---
 
 ## About Me
@@ -90,7 +166,7 @@ B.S. Information Technology (Senior) · GPA: 3.96
 
 ## 📁 Projects
 
-### FinCal: Financial Calculator App --> Check the App here [Link Text](https://github.com/mercadodevsec/FinCal)
+### FinCal: Financial Calculator App → [Check the App here](https://github.com/mercadodevsec/FinCal)
 *Java/Kotlin · Android*
 
 - Building an Android app with 30+ financial calculators covering mortgage, investment, retirement, and tax planning
@@ -137,9 +213,4 @@ B.S. Information Technology (Senior) · GPA: 3.96
 - Word White Belt – McGraw Hill
 - PowerPoint White Belt – McGraw Hill
 
----
-
-## 🔗 Connect With Me
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/john-micah-mercado-03611624a/)
-
+</div>
