@@ -3,23 +3,6 @@
   body {
     background-color: #f0f4f8 !important;
   }
-  /* Change the website title color */
-.fixed-header h1 {
-  color: #1A2A3A !important;  /* ← Change this color */
-}
-
-/* OR if you're using the Minimal theme's default title */
-.site-title {
-  color: #1A2A3A !important;
-}
-
-/* OR to be safe, target both */
-.fixed-header h1,
-.site-title,
-.page-header {
-  color: #1A2A3A !important;
-}
-
   /* ===== FIXED HEADER ON THE LEFT ===== */
   .fixed-header {
     position: fixed;
