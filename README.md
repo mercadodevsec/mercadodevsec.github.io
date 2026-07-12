@@ -1,24 +1,73 @@
-<!-- ===== PROFILE HEADER ===== -->
-<p align="center">
-  <img src="profile.jpg" width="180" style="border-radius: 50%; border: 4px solid #2563eb;" />
-</p>
+<style>
+  /* Make the header fixed at the top */
+  .fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 15px 0 10px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-bottom: 3px solid #2563eb;
+  }
 
-<h1 align="center">John Micah Mercado</h1>
-<h3 align="center">IT Senior · University of North Florida · 3.96 GPA</h3>
+  /* Push the rest of the content down so it doesn't hide behind the header */
+  .content {
+    margin-top: 280px; /* Adjust this value based on your header height */
+  }
 
-<p align="center">
-  <a href="https://github.com/mercadodevsec">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
-  </a>
-  <a href="https://www.linkedin.com/in/john-micah-mercado-03611624a/">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  <a href="mailto:mikkomercado97@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>
-</p>
+  /* Make sure the header content stays centered */
+  .fixed-header .header-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+  }
 
-<hr />
+  /* For mobile responsiveness */
+  @media (max-width: 600px) {
+    .content {
+      margin-top: 240px;
+    }
+    .fixed-header {
+      padding: 10px 0;
+    }
+  }
+</style>
+
+<!-- ===== FIXED PROFILE HEADER ===== -->
+<div class="fixed-header">
+  <div class="header-inner">
+    <p align="center" style="margin: 0;">
+      <img src="profile.jpg" width="120" style="border-radius: 50%; border: 4px solid #2563eb;" />
+    </p>
+    <h1 align="center" style="margin: 5px 0 0 0; font-size: 1.8rem;">John Micah Mercado</h1>
+    <h3 align="center" style="margin: 2px 0 0 0; font-size: 1rem;">IT Senior · University of North Florida · 3.96 GPA</h3>
+    <p align="center" style="margin: 5px 0 0 0;">
+      <a href="https://github.com/mercadodevsec">
+        <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+      </a>
+      <a href="https://www.linkedin.com/in/john-micah-mercado-03611624a/">
+        <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+      </a>
+      <a href="mailto:mikkomercado97@gmail.com">
+        <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+      </a>
+    </p>
+  </div>
+</div>
+
+<!-- ===== REST OF YOUR CONTENT ===== -->
+<div class="content">
+
+## About Me
+
+Software-focused Information Technology senior...
+
+<!-- The rest of your README content goes here -->
+
+</div>
 
 <!-- ===== REST OF YOUR CONTENT BELOW ===== -->
 ---
