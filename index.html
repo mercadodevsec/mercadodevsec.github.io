@@ -8,13 +8,15 @@
     <!-- ===== YOUR ORIGINAL STYLES ===== -->
     <style>
         body {
-            background-color: #1A2A3A; /* Sets background to your dark slate blue */
-            color: #000000;            /* Changed to black for main content */
-            font-family: sans-serif;   /* Makes the text look clean and modern */
+            background-color: #1A2A3A;
+            color: #000000;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
         }
     </style>
 
-    <!-- ===== NEW STYLES (overwrites body bg) ===== -->
+    <!-- ===== NEW STYLES ===== -->
     <style>
         /* ===== CUSTOM BACKGROUND COLOR ===== */
         body {
@@ -27,8 +29,8 @@
             top: 0;
             left: 0;
             width: 320px;
-            height: 100vh; /* Full viewport height */
-            background: #1a2a3a; /* Dark sidebar background */
+            height: 100vh;
+            background: #1a2a3a;
             padding: 40px 20px;
             display: flex;
             flex-direction: column;
@@ -47,12 +49,6 @@
             margin: 15px 0 5px 0;
         }
         
-        .main-content h2 {
-            color: #1A2A3A;
-            border-bottom: 3px solid #1A2A3A;
-            padding-bottom: 8px;
-        }
-
         .fixed-header h3 {
             color: #94a3b8 !important;
             font-size: 1rem;
@@ -61,7 +57,7 @@
         }
 
         .fixed-header .tagline {
-            color: #94a3b8 !important;  /* Changed from #1A2A3A to match other header text */
+            color: #94a3b8 !important;
             font-size: 0.9rem;
             margin-top: 5px;
         }
@@ -92,14 +88,19 @@
             height: 32px;
         }
 
-        /* ===== MAIN CONTENT (Shifts to the right) ===== */
+        /* ===== MAIN CONTENT - CENTERED ===== */
         .main-content {
-            margin-left: 340px; /* Width of sidebar + gap */
+            margin-left: 340px;
             padding: 40px 50px 40px 30px;
             max-width: 800px;
             background-color: #f0f4f8;
             min-height: 100vh;
-            color: #000000;  /* Ensures all main content text is black */
+            color: #000000;
+            /* Center the content horizontally */
+            margin-left: auto;
+            margin-right: auto;
+            /* Keep space for the sidebar on large screens */
+            margin-left: 340px;
         }
 
         /* ===== RESPONSIVE: Stack on mobile ===== */
@@ -115,7 +116,9 @@
             
             .main-content {
                 margin-left: 0;
+                margin-right: 0;
                 padding: 30px 20px;
+                max-width: 100%;
             }
             
             .fixed-header .profile-photo {
@@ -129,6 +132,10 @@
             color: #1a2a3a;
             border-bottom: 3px solid #2563eb;
             padding-bottom: 8px;
+        }
+
+        .main-content h3 {
+            color: #1a2a3a;
         }
 
         .main-content a {
@@ -145,7 +152,7 @@
             margin: 30px 0;
         }
 
-        /* ===== NEW: About Me card styles ===== */
+        /* ===== ABOUT ME CARD STYLES ===== */
         .about-grid {
             display: flex;
             flex-wrap: wrap;
@@ -170,20 +177,34 @@
             color: #2d3f52;
         }
 
-        /* ===== ADDITIONAL: Make all paragraph and list text black ===== */
+        /* ===== MAIN CONTENT TEXT COLORS ===== */
         .main-content p,
         .main-content li,
         .main-content ul,
-        .main-content ol,
-        .main-content h3 {
+        .main-content ol {
             color: #000000;
         }
 
-        /* Keep sidebar header text white */
+        /* Keep sidebar text white */
         .fixed-header p,
         .fixed-header li,
         .fixed-header ul {
             color: #ffffff;
+        }
+
+        /* ===== CENTER CONTENT WRAPPER ===== */
+        .content-wrapper {
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            margin-left: 320px;
+        }
+
+        @media (max-width: 768px) {
+            .content-wrapper {
+                margin-left: 0;
+                flex-direction: column;
+            }
         }
     </style>
 </head>
@@ -210,72 +231,74 @@
         </div>
     </div>
 
-    <!-- ===== MAIN CONTENT ===== -->
-    <div class="main-content">
-        <h2>👨‍💻 About Me</h2>
-        <p>
-            I'm a senior IT student at the University of North Florida, maintaining a 3.96 GPA while blending strong software engineering skills in Java, Kotlin, C++, and C# with a genuine interest in full stack development and cybersecurity. I have built projects ranging from a multithreaded socket server and custom data structures to an Android financial calculator and customer churn prediction pipelines, which have given me hands-on experience across both application development and data processing. I also hold a CompTIA Security+ certification and have completed hands-on cybersecurity labs in my coursework, which keeps me grounded in real-world defense principles and reminds me that great engineering is not just about writing code, but about building resilient, efficient, and thoughtful solutions.
-        </p>
+    <!-- ===== MAIN CONTENT - CENTERED ===== -->
+    <div class="content-wrapper">
+        <div class="main-content">
+            <h2>👨‍💻 About Me</h2>
+            <p>
+                I'm a senior IT student at the University of North Florida, maintaining a 3.96 GPA while blending strong software engineering skills in Java, Kotlin, C++, and C# with a genuine interest in full stack development and cybersecurity. I have built projects ranging from a multithreaded socket server and custom data structures to an Android financial calculator and customer churn prediction pipelines, which have given me hands-on experience across both application development and data processing. I also hold a CompTIA Security+ certification and have completed hands-on cybersecurity labs in my coursework, which keeps me grounded in real-world defense principles and reminds me that great engineering is not just about writing code, but about building resilient, efficient, and thoughtful solutions.
+            </p>
 
-        <h2>🎓 Education</h2>
-        <p>
-            <strong>University of North Florida</strong> · Jacksonville, FL<br />
-            B.S. Information Technology (Senior) · GPA: 3.96<br />
-            <em>August 2024 – Present</em>
-        </p>
-        <p>
-            <strong>Relevant Coursework:</strong> Computer Networks, Cloud Computing, Cybersecurity Systems, Intrusion Detection, Forensics, Systems Administration, Computer Programming, IT Project Management
-        </p>
+            <h2>🎓 Education</h2>
+            <p>
+                <strong>University of North Florida</strong> · Jacksonville, FL<br />
+                B.S. Information Technology (Senior) · GPA: 3.96<br />
+                <em>August 2024 – Present</em>
+            </p>
+            <p>
+                <strong>Relevant Coursework:</strong> Computer Networks, Cloud Computing, Cybersecurity Systems, Intrusion Detection, Forensics, Systems Administration, Computer Programming, IT Project Management
+            </p>
 
-        <h2>📁 Projects</h2>
-        <h3>FinCal: Financial Calculator App → <a href="https://github.com/mercadodevsec/FinCal">Check the App here</a></h3>
-        <p><em>Java/Kotlin · Android</em></p>
-        <ul>
-            <li>Building an Android app with 30+ financial calculators covering mortgage, investment, retirement, and tax planning</li>
-            <li>Leveraging AI-assisted development for compound interest, loan amortization, and ROI calculation engines</li>
-            <li>Designing category-based UI navigation with Jetpack Compose</li>
-            <li>Managing project with Git/GitHub for version control</li>
-        </ul>
+            <h2>📁 Projects</h2>
+            <h3>FinCal: Financial Calculator App → <a href="https://github.com/mercadodevsec/FinCal">Check the App here</a></h3>
+            <p><em>Java/Kotlin · Android</em></p>
+            <ul>
+                <li>Building an Android app with 30+ financial calculators covering mortgage, investment, retirement, and tax planning</li>
+                <li>Leveraging AI-assisted development for compound interest, loan amortization, and ROI calculation engines</li>
+                <li>Designing category-based UI navigation with Jetpack Compose</li>
+                <li>Managing project with Git/GitHub for version control</li>
+            </ul>
 
-        <h3>Customer Churn Pipeline</h3>
-        <p><em>C#</em></p>
-        <ul>
-            <li>Built a C# application to read, parse, and process customer data from CSV files</li>
-            <li>Developed logic to analyze user behavior (login frequency, spending, tenure, support issues) to identify high-risk customers</li>
-            <li>Implemented file handling, data validation, and input/output operations</li>
-        </ul>
+            <h3>Customer Churn Pipeline</h3>
+            <p><em>C#</em></p>
+            <ul>
+                <li>Built a C# application to read, parse, and process customer data from CSV files</li>
+                <li>Developed logic to analyze user behavior (login frequency, spending, tenure, support issues) to identify high-risk customers</li>
+                <li>Implemented file handling, data validation, and input/output operations</li>
+            </ul>
 
-        <h3>Java Programming Projects</h3>
-        <p><em>Java · Academic</em></p>
-        <ul>
-            <li>Built a Concurrent Socket Server supporting multiple simultaneous clients using multithreading</li>
-            <li>Developed EncodedList with real-time Byte Pair Encoding (BPE) compression</li>
-            <li>Implemented Binary Search Tree with efficient operations</li>
-            <li>Created modified Tic-Tac-Toe game with rolling board mechanic</li>
-        </ul>
+            <h3>Java Programming Projects</h3>
+            <p><em>Java · Academic</em></p>
+            <ul>
+                <li>Built a Concurrent Socket Server supporting multiple simultaneous clients using multithreading</li>
+                <li>Developed EncodedList with real-time Byte Pair Encoding (BPE) compression</li>
+                <li>Implemented Binary Search Tree with efficient operations</li>
+                <li>Created modified Tic-Tac-Toe game with rolling board mechanic</li>
+            </ul>
 
-        <h3>C++ Programming Projects</h3>
-        <p><em>C++ · Academic</em></p>
-        <ul>
-            <li>Developed CO2 emissions data calculation and analysis program</li>
-            <li>Built text analysis application for word and vowel counting</li>
-            <li>Implemented file input/output operations</li>
-        </ul>
+            <h3>C++ Programming Projects</h3>
+            <p><em>C++ · Academic</em></p>
+            <ul>
+                <li>Developed CO2 emissions data calculation and analysis program</li>
+                <li>Built text analysis application for word and vowel counting</li>
+                <li>Implemented file input/output operations</li>
+            </ul>
 
-        <h2>🛠️ Skills</h2>
-        <p>
-            <strong>Languages:</strong> Java, Kotlin, C++, C#<br />
-            <strong>Technologies:</strong> Android Development, Jetpack Compose, Multithreading, Socket Programming, Git/GitHub, Linux<br />
-            <strong>Office:</strong> Microsoft Excel, Word, Access
-        </p>
+            <h2>🛠️ Skills</h2>
+            <p>
+                <strong>Languages:</strong> Java, Kotlin, C++, C#<br />
+                <strong>Technologies:</strong> Android Development, Jetpack Compose, Multithreading, Socket Programming, Git/GitHub, Linux<br />
+                <strong>Office:</strong> Microsoft Excel, Word, Access
+            </p>
 
-        <h2>📜 Certifications</h2>
-        <ul>
-            <li>CompTIA Security+ (December 2024)</li>
-            <li>Excel White Belt – McGraw Hill</li>
-            <li>Word White Belt – McGraw Hill</li>
-            <li>PowerPoint White Belt – McGraw Hill</li>
-        </ul>
+            <h2>📜 Certifications</h2>
+            <ul>
+                <li>CompTIA Security+ (December 2024)</li>
+                <li>Excel White Belt – McGraw Hill</li>
+                <li>Word White Belt – McGraw Hill</li>
+                <li>PowerPoint White Belt – McGraw Hill</li>
+            </ul>
+        </div>
     </div>
 
 </body>
