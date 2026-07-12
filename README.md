@@ -42,7 +42,7 @@ B.S. Information Technology (Senior) · GPA: 3.96
 
 ## 📁 Projects
 
-### FinCal: Financial Calculator App -- Link --> https://github.com/mercadodevsec/FinCal
+### FinCal: Financial Calculator App
 *Java/Kotlin · Android*
 
 - Building an Android app with 30+ financial calculators covering mortgage, investment, retirement, and tax planning
