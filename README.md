@@ -177,13 +177,13 @@
 <!-- ===== MAIN CONTENT ===== -->
 <div class="main-content" markdown="1">
 
----
+
 
 ## 👨‍💻 About Me
 
 I'm a senior IT student at the University of North Florida, maintaining a 3.96 GPA while blending strong software engineering skills in Java, Kotlin, C++, and C# with a genuine interest in full stack development and cybersecurity. I have built projects ranging from a multithreaded socket server and custom data structures to an Android financial calculator and customer churn prediction pipelines, which have given me hands-on experience across both application development and data processing. I also hold a CompTIA Security+ certification and have completed hands-on cybersecurity labs in my coursework, which keeps me grounded in real-world defense principles and reminds me that great engineering is not just about writing code, but about building resilient, efficient, and thoughtful solutions.
 
----
+
 
 ## 🎓 Education
 
@@ -193,7 +193,6 @@ B.S. Information Technology (Senior) · GPA: 3.96
 
 **Relevant Coursework:** Computer Networks, Cloud Computing, Cybersecurity Systems, Intrusion Detection, Forensics, Systems Administration, Computer Programming, IT Project Management
 
----
 
 ## 📁 Projects
 
@@ -227,7 +226,6 @@ B.S. Information Technology (Senior) · GPA: 3.96
 - Built text analysis application for word and vowel counting
 - Implemented file input/output operations
 
----
 
 ## 🛠️ Skills
 
@@ -235,7 +233,6 @@ B.S. Information Technology (Senior) · GPA: 3.96
 **Technologies:** Android Development, Jetpack Compose, Multithreading, Socket Programming, Git/GitHub, Linux  
 **Office:** Microsoft Excel, Word, Access
 
----
 
 ## 📜 Certifications
 
