@@ -1,3 +1,5 @@
 theme: jekyll-theme-minimal
 title: Welcome To My Online Resume!
 show_downloads: false
+github:
+  is_project_page: false
