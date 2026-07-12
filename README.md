@@ -120,6 +120,31 @@
     border: 1px solid #d1d9e6;
     margin: 30px 0;
   }
+
+  /* ===== NEW: About Me card styles ===== */
+  .about-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 15px 0;
+  }
+  .about-card {
+    flex: 1;
+    min-width: 150px;
+    background: #e8edf3;
+    padding: 12px 18px;
+    border-radius: 8px;
+    border-left: 4px solid #2563eb;
+  }
+  .about-card strong {
+    display: block;
+    font-size: 1rem;
+    color: #1a2a3a;
+  }
+  .about-card span {
+    font-size: 0.95rem;
+    color: #2d3f52;
+  }
 </style>
 
 <!-- ===== FIXED LEFT HEADER ===== -->
@@ -148,9 +173,30 @@
 
 ---
 
-## About Me
+## 👨‍💻 About Me
 
-Software-focused Information Technology senior with hands-on experience building applications in Java, C++, and C#. Demonstrated ability to independently design and ship functional software — from an Android financial calculator app to a concurrent socket server and a data pipeline for churn prediction.
+I'm a software-focused IT senior at the University of North Florida (**3.96 GPA**) with hands-on experience in **Java, Kotlin, C++, and C#**. I enjoy independently designing and shipping functional software — from Android apps to backend servers and data pipelines.
+
+<div class="about-grid">
+  <div class="about-card">
+    <strong>📱 Android</strong>
+    <span>FinCal · 30+ calculators</span>
+  </div>
+  <div class="about-card">
+    <strong>⚙️ Backend</strong>
+    <span>Socket servers · Multithreading</span>
+  </div>
+  <div class="about-card">
+    <strong>📊 Data</strong>
+    <span>Churn pipelines · C# analysis</span>
+  </div>
+  <div class="about-card">
+    <strong>🔒 Security</strong>
+    <span>CompTIA Security+ · Intrusion Detection</span>
+  </div>
+</div>
+
+**Currently exploring:** Cloud computing (AWS, Azure), AI-assisted development, and modern Android architecture.
 
 ---
 
