@@ -5,25 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>John Micah Mercado</title>
     
-    <!-- ===== YOUR ORIGINAL STYLES ===== -->
     <style>
-        body {
-            background-color: #1A2A3A;
-            color: #000000;
-            font-family: sans-serif;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
-    </style>
 
-    <!-- ===== NEW STYLES ===== -->
-    <style>
-        /* ===== CUSTOM BACKGROUND COLOR ===== */
         body {
-            background-color: #f0f4f8 !important;
+            background-color: #f0f4f8;
+            color: #000000;
+            font-family: sans-serif;
         }
 
-        /* ===== FIXED HEADER ON THE LEFT ===== */
+        /* ===== FIXED LEFT SIDEBAR ===== */
         .fixed-header {
             position: fixed;
             top: 0;
@@ -35,35 +30,13 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
             text-align: center;
             box-shadow: 2px 0 15px rgba(0, 0, 0, 0.15);
             z-index: 1000;
             overflow-y: auto;
         }
 
-        /* ===== HEADER TEXT COLORS ===== */
-        .fixed-header h1 {
-            color: #ffffff !important;
-            font-size: 1.8rem;
-            margin: 15px 0 5px 0;
-        }
-        
-        .fixed-header h3 {
-            color: #94a3b8 !important;
-            font-size: 1rem;
-            margin: 5px 0;
-            font-weight: 400;
-        }
-
-        .fixed-header .tagline {
-            color: #94a3b8 !important;
-            font-size: 0.9rem;
-            margin-top: 5px;
-        }
-
-        /* ===== PROFILE PHOTO IN HEADER ===== */
-        .fixed-header .profile-photo {
+        .profile-photo {
             border-radius: 50%;
             border: 4px solid #2563eb;
             width: 150px;
@@ -71,8 +44,26 @@
             object-fit: cover;
         }
 
-        /* ===== SOCIAL LINKS IN HEADER ===== */
-        .fixed-header .social-links {
+        .fixed-header h1 {
+            color: #ffffff;
+            font-size: 1.8rem;
+            margin: 15px 0 5px;
+        }
+        
+        .fixed-header h3 {
+            color: #94a3b8;
+            font-size: 1rem;
+            margin: 5px 0;
+            font-weight: 400;
+        }
+
+        .tagline {
+            color: #94a3b8;
+            font-size: 0.9rem;
+            margin-top: 5px;
+        }
+
+        .social-links {
             margin-top: 20px;
             display: flex;
             gap: 10px;
@@ -80,62 +71,28 @@
             justify-content: center;
         }
 
-        .fixed-header .social-links a {
-            display: inline-block;
-        }
-
-        .fixed-header .social-links img {
+        .social-links img {
             height: 32px;
         }
 
-        /* ===== MAIN CONTENT - CENTERED ===== */
+        /* ===== MAIN CONTENT ===== */
         .main-content {
             margin-left: 340px;
-            padding: 40px 50px 40px 30px;
+            padding: 40px 50px;
             max-width: 800px;
-            background-color: #f0f4f8;
             min-height: 100vh;
-            color: #000000;
-            /* Center the content horizontally */
-            margin-left: auto;
-            margin-right: auto;
-            /* Keep space for the sidebar on large screens */
-            margin-left: 340px;
         }
 
-        /* ===== RESPONSIVE: Stack on mobile ===== */
-        @media (max-width: 768px) {
-            .fixed-header {
-                position: relative;
-                width: 100%;
-                height: auto;
-                min-height: 100vh;
-                padding: 30px 20px;
-                flex-direction: column;
-            }
-            
-            .main-content {
-                margin-left: 0;
-                margin-right: 0;
-                padding: 30px 20px;
-                max-width: 100%;
-            }
-            
-            .fixed-header .profile-photo {
-                width: 120px;
-                height: 120px;
-            }
-        }
-
-        /* ===== STYLING FOR YOUR CONTENT ===== */
         .main-content h2 {
             color: #1a2a3a;
             border-bottom: 3px solid #2563eb;
             padding-bottom: 8px;
+            margin-top: 30px;
         }
 
         .main-content h3 {
             color: #1a2a3a;
+            margin-top: 15px;
         }
 
         .main-content a {
@@ -147,70 +104,45 @@
             text-decoration: underline;
         }
 
-        .main-content hr {
-            border: 1px solid #d1d9e6;
-            margin: 30px 0;
+        .main-content p {
+            margin: 12px 0;
+            line-height: 1.6;
         }
 
-        /* ===== ABOUT ME CARD STYLES ===== */
-        .about-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin: 15px 0;
-        }
-        .about-card {
-            flex: 1;
-            min-width: 150px;
-            background: #e8edf3;
-            padding: 12px 18px;
-            border-radius: 8px;
-            border-left: 4px solid #2563eb;
-        }
-        .about-card strong {
-            display: block;
-            font-size: 1rem;
-            color: #1a2a3a;
-        }
-        .about-card span {
-            font-size: 0.95rem;
-            color: #2d3f52;
+        .main-content ul {
+            margin-left: 20px;
+            margin-top: 10px;
         }
 
-        /* ===== MAIN CONTENT TEXT COLORS ===== */
-        .main-content p,
-        .main-content li,
-        .main-content ul,
-        .main-content ol {
-            color: #000000;
+        .main-content li {
+            margin: 8px 0;
         }
 
-        /* Keep sidebar text white */
-        .fixed-header p,
-        .fixed-header li,
-        .fixed-header ul {
-            color: #ffffff;
-        }
-
-        /* ===== CENTER CONTENT WRAPPER ===== */
-        .content-wrapper {
-            display: flex;
-            justify-content: center;
-            min-height: 100vh;
-            margin-left: 320px;
-        }
-
+        /* ===== RESPONSIVE ===== */
         @media (max-width: 768px) {
-            .content-wrapper {
+            .fixed-header {
+                position: relative;
+                width: 100%;
+                height: auto;
+                padding: 30px 20px;
+            }
+            
+            .main-content {
                 margin-left: 0;
-                flex-direction: column;
+                padding: 30px 20px;
+                max-width: 100%;
+            }
+            
+            .profile-photo {
+                width: 120px;
+                height: 120px;
             }
         }
     </style>
 </head>
 <body>
 
-    <!-- ===== FIXED LEFT HEADER ===== -->
+    <!-- ===== LEFT SIDEBAR ===== -->
     <div class="fixed-header">
         <img src="profile.jpg" alt="John Micah Mercado" class="profile-photo" />
         
@@ -231,74 +163,72 @@
         </div>
     </div>
 
-    <!-- ===== MAIN CONTENT - CENTERED ===== -->
-    <div class="content-wrapper">
-        <div class="main-content">
-            <h2>👨‍💻 About Me</h2>
-            <p>
-                IT senior (3.95 GPA) with full-stack development experience and a strong technical foundation spanning web, mobile, and back-end systems. Proficient in Python and Java, with additional familiarity across C#, JavaScript, C++, Kotlin, and modern technologies including React.js, REST APIs, Node.js, MySQL, Jetpack Compose, HTML, CSS, and Linux. CompTIA Security+ certified with hands-on experience in multithreading, socket programming, data structures, cloud computing, networking, Git/GitHub, and Microsoft Office Suite. A self-starting developer with a proven ability to independently deliver complete, functional software solutions.
-            </p>
+    <!-- ===== MAIN CONTENT ===== -->
+    <div class="main-content">
+        <h2>👨‍💻 About Me</h2>
+        <p>
+            IT senior (3.95 GPA) with full-stack development experience and a strong technical foundation spanning web, mobile, and back-end systems. Proficient in Python and Java, with additional[...]
+        </p>
 
-            <h2>🎓 Education</h2>
-            <p>
-                <strong>University of North Florida</strong> · Jacksonville, FL<br />
-                B.S. Information Technology (Senior) · GPA: 3.96<br />
-                <em>August 2024 – Present</em>
-            </p>
-            <p>
-                <strong>Relevant Coursework:</strong> Computer Networks, Cloud Computing, Cybersecurity Systems, Intrusion Detection, Forensics, Systems Administration, Computer Programming, IT Project Management
-            </p>
+        <h2>🎓 Education</h2>
+        <p>
+            <strong>University of North Florida</strong> · Jacksonville, FL<br />
+            B.S. Information Technology (Senior) · GPA: 3.96<br />
+            <em>August 2024 – Present</em>
+        </p>
+        <p>
+            <strong>Relevant Coursework:</strong> Computer Networks, Cloud Computing, Cybersecurity Systems, Intrusion Detection, Forensics, Systems Administration, Computer Programming, IT Projec[...]
+        </p>
 
-            <h2>📁 Projects</h2>
-            <h3>FinCal: Financial Calculator App → <a href="https://github.com/mercadodevsec/FinCal">Check the App here</a></h3>
-            <p><em>Java/Kotlin - Personal</em></p>
-            <ul>
-                <li>Building an Android app with 30+ financial calculators covering mortgage, investment, retirement, and tax planning</li>
-                <li>Leveraging AI-assisted development for compound interest, loan amortization, and ROI calculation engines</li>
-                <li>Designing category-based UI navigation with Jetpack Compose</li>
-                <li>Managing project with Git/GitHub for version control</li>
-            </ul>
+        <h2>📁 Projects</h2>
+        <h3>FinCal: Financial Calculator App → <a href="https://github.com/mercadodevsec/FinCal">Check the App here</a></h3>
+        <p><em>Java/Kotlin - Personal</em></p>
+        <ul>
+            <li>Building an Android app with 30+ financial calculators covering mortgage, investment, retirement, and tax planning</li>
+            <li>Leveraging AI-assisted development for compound interest, loan amortization, and ROI calculation engines</li>
+            <li>Designing category-based UI navigation with Jetpack Compose</li>
+            <li>Managing project with Git/GitHub for version control</li>
+        </ul>
 
-            <h3>Customer Churn Pipeline</h3>
-            <p><em>C# - Personal</em></p>
-            <ul>
-                <li>Built a C# application to read, parse, and process customer data from CSV files</li>
-                <li>Developed logic to analyze user behavior (login frequency, spending, tenure, support issues) to identify high-risk customers</li>
-                <li>Implemented file handling, data validation, and input/output operations</li>
-            </ul>
+        <h3>Customer Churn Pipeline</h3>
+        <p><em>C# - Personal</em></p>
+        <ul>
+            <li>Built a C# application to read, parse, and process customer data from CSV files</li>
+            <li>Developed logic to analyze user behavior (login frequency, spending, tenure, support issues) to identify high-risk customers</li>
+            <li>Implemented file handling, data validation, and input/output operations</li>
+        </ul>
 
-            <h3>Java Programming Projects</h3>
-            <p><em>Java - Academic</em></p>
-            <ul>
-                <li>Built a Concurrent Socket Server supporting multiple simultaneous clients using multithreading</li>
-                <li>Developed EncodedList with real-time Byte Pair Encoding (BPE) compression</li>
-                <li>Implemented Binary Search Tree with efficient operations</li>
-                <li>Created modified Tic-Tac-Toe game with rolling board mechanic</li>
-            </ul>
+        <h3>Java Programming Projects</h3>
+        <p><em>Java - Academic</em></p>
+        <ul>
+            <li>Built a Concurrent Socket Server supporting multiple simultaneous clients using multithreading</li>
+            <li>Developed EncodedList with real-time Byte Pair Encoding (BPE) compression</li>
+            <li>Implemented Binary Search Tree with efficient operations</li>
+            <li>Created modified Tic-Tac-Toe game with rolling board mechanic</li>
+        </ul>
 
-            <h3>C++ Programming Projects</h3>
-            <p><em>C++ - Academic</em></p>
-            <ul>
-                <li>Developed CO2 emissions data calculation and analysis program</li>
-                <li>Built text analysis application for word and vowel counting</li>
-                <li>Implemented file input/output operations</li>
-            </ul>
+        <h3>C++ Programming Projects</h3>
+        <p><em>C++ - Academic</em></p>
+        <ul>
+            <li>Developed CO2 emissions data calculation and analysis program</li>
+            <li>Built text analysis application for word and vowel counting</li>
+            <li>Implemented file input/output operations</li>
+        </ul>
 
-            <h2>🛠️ Skills</h2>
-            <p>
-                <strong>Languages:</strong> Java, Kotlin, C++, C#, Python<br />
-                <strong>Technologies:</strong> Android Development, Jetpack Compose, Multithreading, Socket Programming, Binary Search Trees, Byte Pair Encoding, Git/GitHub, Linux, React.js, REST API, HTML, CSS, Node.js, MySQL<br />
-                <strong>Office:</strong> Microsoft Excel, Word, Access
-            </p>
+        <h2>🛠️ Skills</h2>
+        <p>
+            <strong>Languages:</strong> Java, Kotlin, C++, C#, Python<br />
+            <strong>Technologies:</strong> Android Development, Jetpack Compose, Multithreading, Socket Programming, Binary Search Trees, Byte Pair Encoding, Git/GitHub, Linux, React.js, REST API,[...]<br />
+            <strong>Office:</strong> Microsoft Excel, Word, Access
+        </p>
 
-            <h2>📜 Certifications</h2>
-            <ul>
-                <li>CompTIA Security+ (December 2024)</li>
-                <li>Excel White Belt – McGraw Hill</li>
-                <li>Word White Belt – McGraw Hill</li>
-                <li>PowerPoint White Belt – McGraw Hill</li>
-            </ul>
-        </div>
+        <h2>📜 Certifications</h2>
+        <ul>
+            <li>CompTIA Security+ (December 2024)</li>
+            <li>Excel White Belt – McGraw Hill</li>
+            <li>Word White Belt – McGraw Hill</li>
+            <li>PowerPoint White Belt – McGraw Hill</li>
+        </ul>
     </div>
 
 </body>
