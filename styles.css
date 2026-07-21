@@ -13,7 +13,7 @@ body {
 /* ===== FIXED HEADER ON THE LEFT ===== */
 .fixed-header {
     position: fixed;
-    width: 320px;
+    width: 370px;
     height: 100vh;
     background: #1a2a3a;
     padding: 0px 20px;
@@ -31,8 +31,8 @@ h1 {
     margin: 15px 0 5px 0;
 }
 
-h3 {
-    color: #94a3b8 ;
+.fixed-header h3 {
+    color: #94a3b8;
     font-size: 1rem;
     margin: 5px 0;
     font-weight: 400;
@@ -99,7 +99,7 @@ img {
 
 /* ===== CENTER CONTENT WRAPPER ===== */
 .content-wrapper {
-    margin-left: 360px;
+    margin-left: 410px;
     background: linear-gradient(whitesmoke,lightblue);
 }
 
