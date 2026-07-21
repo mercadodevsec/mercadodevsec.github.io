@@ -71,7 +71,8 @@ h1 {
 }
 
 img {
-    width: 250px;
+    max-width: 100%;
+    height: auto;
 }
 
 /* ===== MAIN CONTENT - CENTERED ===== */
@@ -99,13 +100,60 @@ img {
 
 /* ===== CENTER CONTENT WRAPPER ===== */
 .content-wrapper {
-    margin-left: 410px;
-    background: linear-gradient(whitesmoke,lightblue);
+    margin-left: 370px;
+    background: linear-gradient(whitesmoke, lightblue);
 }
 
 @media (max-width: 768px) {
+    .fixed-header {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 25px 20px;
+        justify-content: flex-start;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 20px;
+        max-width: 100%;
+    }
+
     .content-wrapper {
-        flex-direction: column;
+        margin-left: 0;
+        background: none;
+        padding-top: 20px;
+    }
+
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .social-links {
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .photo-gallery {
+        padding: 12px;
+    }
+
+    .gallery-img {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .fixed-header h3,
+    .fixed-header .tagline {
+        font-size: 0.95rem;
+    }
+
+    p {
+        font-size: 1rem;
     }
 }
 
