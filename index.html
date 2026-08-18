@@ -4,77 +4,319 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>John Micah Mercado</title>
+    <title>John Micah Mercado | Technologist & IT Professional</title>
+    <meta name="description" content="Portfolio of John Micah Mercado - Information Technology graduate from University of North Florida focusing on full stack development, system designs, cybersecurity, and AI." />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <!-- Background subtle ambient glow effects -->
+    <div class="ambient-glow glow-top-left" aria-hidden="true"></div>
+    <div class="ambient-glow glow-bottom-right" aria-hidden="true"></div>
 
-    <!-- ===== FIXED LEFT HEADER ===== -->
-    <div class="fixed-header">
-        <img src="/assets/profile.jpg" alt="John Micah Mercado" class="profile-photo" />
+    <div class="layout-container">
+        <!-- ===== LEFT SIDEBAR / PROFILE CARD ===== -->
+        <aside class="sidebar">
+            <div class="sidebar-inner">
+                <div class="profile-avatar-container">
+                    <div class="avatar-glow"></div>
+                    <img src="assets/profile.jpg" alt="John Micah Mercado" class="profile-photo" width="160" height="160" />
+                    <span class="status-indicator" title="Open to opportunities" aria-label="Status: Open to opportunities">
+                        <span class="status-dot"></span>
+                    </span>
+                </div>
 
-        <h1>John Micah Mercado</h1>
-        <h3>Information Technology · University of North Florida</h3>
-        <p class="tagline">3.96 GPA</p>
+                <div class="profile-info">
+                    <h1 class="profile-name">John Micah Mercado</h1>
+                    <p class="profile-title">
+                        <span>Information Technology</span>
+                        <span class="divider">·</span>
+                        <span>University of North Florida</span>
+                    </p>
+                    <div class="badge-row">
+                        <span class="pill-badge gpa-badge">
+                            <svg class="badge-icon" viewBox="0 0 20 20" fill="currentColor" width="14" height="14" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                            </svg>
+                            3.96 GPA
+                        </span>
+                        <span class="pill-badge status-badge">UNF Alumni</span>
+                    </div>
+                </div>
 
-        <div class="social-links">
-            <a href="https://github.com/mercadodevsec">
-                <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"
-                    alt="GitHub" id="github" />
-            </a>
-            <a href="https://www.linkedin.com/in/john-micah-mercado-03611624a/">
-                <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"
-                    alt="LinkedIn" id="linkedin" />
-            </a>
-            <a href="mailto:mikkomercado97@gmail.com">
-                <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"
-                    alt="Email" id="email" />
-            </a>
-            <a href="/assets/Civilian Resume.pdf">
-                <img src="https://img.shields.io/badge/Resume-0A3A5C?style=for-the-badge&logo=adobe&logoColor=white"
-                    alt="Resume" id="resume" />
-            </a>
-        </div>
+                <hr class="sidebar-divider" />
+
+                <!-- ===== SOCIAL ACTION BUTTONS ===== -->
+                <nav class="social-actions" aria-label="Social and professional links">
+                    <a href="https://github.com/mercadodevsec" target="_blank" rel="noopener noreferrer" class="social-btn github-btn" id="github-link" aria-label="GitHub Profile">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                        </svg>
+                        <span class="btn-text">GitHub</span>
+                        <svg class="external-arrow" viewBox="0 0 16 16" fill="currentColor" width="12" height="12" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M4 2a.75.75 0 000 1.5h6.69L2.22 12.03a.75.75 0 101.06 1.06L11.81 4.56V11.25a.75.75 0 001.5 0V2.75A.75.75 0 0012.56 2H4z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/john-micah-mercado-03611624a/" target="_blank" rel="noopener noreferrer" class="social-btn linkedin-btn" id="linkedin-link" aria-label="LinkedIn Profile">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+                            <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+                        </svg>
+                        <span class="btn-text">LinkedIn</span>
+                        <svg class="external-arrow" viewBox="0 0 16 16" fill="currentColor" width="12" height="12" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M4 2a.75.75 0 000 1.5h6.69L2.22 12.03a.75.75 0 101.06 1.06L11.81 4.56V11.25a.75.75 0 001.5 0V2.75A.75.75 0 0012.56 2H4z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+
+                    <a href="mailto:mikkomercado97@gmail.com" class="social-btn email-btn" id="email-link" aria-label="Send Email">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+                            <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+                            <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+                        </svg>
+                        <span class="btn-text">Email Me</span>
+                        <svg class="external-arrow" viewBox="0 0 16 16" fill="currentColor" width="12" height="12" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M4 2a.75.75 0 000 1.5h6.69L2.22 12.03a.75.75 0 101.06 1.06L11.81 4.56V11.25a.75.75 0 001.5 0V2.75A.75.75 0 0012.56 2H4z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+
+                    <a href="assets/Civilian Resume.pdf" target="_blank" rel="noopener noreferrer" class="social-btn resume-btn" id="resume-link" aria-label="View Resume PDF">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M5.625 1.5c-1.036 0-1.875.84-1.875 1.875v17.25c0 1.035.84 1.875 1.875 1.875h12.75c1.035 0 1.875-.84 1.875-1.875V12.75A3.75 3.75 0 0016.5 9h-1.875a1.875 1.875 0 01-1.875-1.875V5.25A3.75 3.75 0 009 1.5H5.625zM7.5 15a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5A.75.75 0 017.5 15zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H8.25z" clip-rule="evenodd" />
+                            <path d="M12.971 1.816A5.23 5.23 0 0114.25 5.25v1.875c0 .207.168.375.375.375H16.5a5.23 5.23 0 013.434 1.279 9.768 9.768 0 00-6.963-6.963z" />
+                        </svg>
+                        <span class="btn-text">Resume (PDF)</span>
+                        <svg class="external-arrow" viewBox="0 0 16 16" fill="currentColor" width="12" height="12" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M4 2a.75.75 0 000 1.5h6.69L2.22 12.03a.75.75 0 101.06 1.06L11.81 4.56V11.25a.75.75 0 001.5 0V2.75A.75.75 0 0012.56 2H4z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </nav>
+
+                <div class="sidebar-footer">
+                    <p class="copyright">© 2026 John Micah Mercado</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- ===== MAIN CONTENT AREA ===== -->
+        <main class="main-content">
+            <!-- Bio / About Hero Card -->
+            <section class="card intro-card" aria-labelledby="intro-heading">
+                <div class="card-header-badge">
+                    <span class="pulse-sparkle">✨</span>
+                    <span>About Me</span>
+                </div>
+                <h2 id="intro-heading" class="intro-headline">Technologist, Foodie, Athletic-ish</h2>
+                <p class="intro-body">
+                    Hi, I’m an alumni at UNF with foundational IT knowledge who enjoys working across full stack
+                    development, learning scalable tools important on system designs, exploring cybersecurity, and dabbling
+                    in AI. When I’m not autodidacting, I’m probably watching a movie, staying active, or planning my next
+                    trip — even if it’s just in my head for now. Welcome to my little space on the web.
+                </p>
+
+                <!-- Interest Tags / Skill Chips -->
+                <div class="tags-container" aria-label="Areas of interest">
+                    <span class="tag-chip">💻 Full Stack Dev</span>
+                    <span class="tag-chip">⚙️ System Design</span>
+                    <span class="tag-chip">🛡️ Cybersecurity</span>
+                    <span class="tag-chip">🤖 AI & ML</span>
+                    <span class="tag-chip">🏃 Athletic-ish</span>
+                    <span class="tag-chip">🍜 Food Enthusiast</span>
+                    <span class="tag-chip">✈️ Travel Explorer</span>
+                </div>
+            </section>
+
+            <!-- Photo Gallery Section -->
+            <section class="gallery-section" aria-labelledby="gallery-heading">
+                <div class="section-header">
+                    <div class="section-title-wrapper">
+                        <span class="section-eyebrow">Highlights & Memories</span>
+                        <h3 id="gallery-heading" class="section-title">Life, Travels & Moments</h3>
+                    </div>
+                    <span class="item-count-badge">5 Moments</span>
+                </div>
+
+                <div class="gallery-grid">
+                    <!-- Orlando -->
+                    <figure class="gallery-card" data-full-src="assets/orlando.jpg" data-caption="🏰 Trip to Orlando">
+                        <div class="card-image-wrap">
+                            <img src="assets/orlando.jpg" alt="Trip to Orlando" class="gallery-img" loading="lazy" />
+                            <div class="card-overlay">
+                                <span class="view-pill">
+                                    <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                                        <path d="M10 12.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z" />
+                                        <path fill-rule="evenodd" d="M.664 10.59a1.651 1.651 0 010-1.186A10.004 10.004 0 0110 3c4.257 0 7.893 2.66 9.336 6.41.147.381.146.804 0 1.186A10.004 10.004 0 0110 17c-4.257 0-7.893-2.66-9.336-6.41zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+                                    </svg>
+                                    View Photo
+                                </span>
+                            </div>
+                        </div>
+                        <figcaption class="card-caption">
+                            <span class="caption-icon" aria-hidden="true">🏰</span>
+                            <div class="caption-text">
+                                <h4 class="caption-title">Trip to Orlando</h4>
+                                <span class="caption-subtitle">Travel & Adventure</span>
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                    <!-- Tampa -->
+                    <figure class="gallery-card" data-full-src="assets/tampa.jpg" data-caption="🎢 Trip to Tampa Busch Gardens">
+                        <div class="card-image-wrap">
+                            <img src="assets/tampa.jpg" alt="Trip to Tampa Busch Gardens" class="gallery-img" loading="lazy" />
+                            <div class="card-overlay">
+                                <span class="view-pill">
+                                    <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                                        <path d="M10 12.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z" />
+                                        <path fill-rule="evenodd" d="M.664 10.59a1.651 1.651 0 010-1.186A10.004 10.004 0 0110 3c4.257 0 7.893 2.66 9.336 6.41.147.381.146.804 0 1.186A10.004 10.004 0 0110 17c-4.257 0-7.893-2.66-9.336-6.41zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+                                    </svg>
+                                    View Photo
+                                </span>
+                            </div>
+                        </div>
+                        <figcaption class="card-caption">
+                            <span class="caption-icon" aria-hidden="true">🎢</span>
+                            <div class="caption-text">
+                                <h4 class="caption-title">Trip to Tampa Busch Gardens</h4>
+                                <span class="caption-subtitle">Theme Park Fun</span>
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                    <!-- Walnut Shrimp -->
+                    <figure class="gallery-card" data-full-src="assets/food2.jpg" data-caption="🍤 My Favorite Dish - Walnut Shrimp">
+                        <div class="card-image-wrap">
+                            <img src="assets/food2.jpg" alt="My favorite dish - Walnut Shrimp" class="gallery-img" loading="lazy" />
+                            <div class="card-overlay">
+                                <span class="view-pill">
+                                    <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                                        <path d="M10 12.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z" />
+                                        <path fill-rule="evenodd" d="M.664 10.59a1.651 1.651 0 010-1.186A10.004 10.004 0 0110 3c4.257 0 7.893 2.66 9.336 6.41.147.381.146.804 0 1.186A10.004 10.004 0 0110 17c-4.257 0-7.893-2.66-9.336-6.41zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+                                    </svg>
+                                    View Photo
+                                </span>
+                            </div>
+                        </div>
+                        <figcaption class="card-caption">
+                            <span class="caption-icon" aria-hidden="true">🍤</span>
+                            <div class="caption-text">
+                                <h4 class="caption-title">My Favorite Dish - Walnut Shrimp</h4>
+                                <span class="caption-subtitle">Culinary Delight</span>
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                    <!-- Lake Louise -->
+                    <figure class="gallery-card" data-full-src="assets/whitesnow.jpg" data-caption="☕ Drinking Hot Coffee in Lake Louise">
+                        <div class="card-image-wrap">
+                            <img src="assets/whitesnow.jpg" alt="Drinking hot coffee in Lake Louise" class="gallery-img" loading="lazy" />
+                            <div class="card-overlay">
+                                <span class="view-pill">
+                                    <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                                        <path d="M10 12.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z" />
+                                        <path fill-rule="evenodd" d="M.664 10.59a1.651 1.651 0 010-1.186A10.004 10.004 0 0110 3c4.257 0 7.893 2.66 9.336 6.41.147.381.146.804 0 1.186A10.004 10.004 0 0110 17c-4.257 0-7.893-2.66-9.336-6.41zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+                                    </svg>
+                                    View Photo
+                                </span>
+                            </div>
+                        </div>
+                        <figcaption class="card-caption">
+                            <span class="caption-icon" aria-hidden="true">☕</span>
+                            <div class="caption-text">
+                                <h4 class="caption-title">Drinking Hot Coffee in Lake Louise</h4>
+                                <span class="caption-subtitle">Winter Serenity</span>
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                    <!-- Marathon -->
+                    <figure class="gallery-card" data-full-src="assets/marathon.jpg" data-caption="🏃 5K Marathon Achievement">
+                        <div class="card-image-wrap">
+                            <img src="assets/marathon.jpg" alt="5K Marathon Achievement" class="gallery-img" loading="lazy" />
+                            <div class="card-overlay">
+                                <span class="view-pill">
+                                    <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                                        <path d="M10 12.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z" />
+                                        <path fill-rule="evenodd" d="M.664 10.59a1.651 1.651 0 010-1.186A10.004 10.004 0 0110 3c4.257 0 7.893 2.66 9.336 6.41.147.381.146.804 0 1.186A10.004 10.004 0 0110 17c-4.257 0-7.893-2.66-9.336-6.41zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+                                    </svg>
+                                    View Photo
+                                </span>
+                            </div>
+                        </div>
+                        <figcaption class="card-caption">
+                            <span class="caption-icon" aria-hidden="true">🏃</span>
+                            <div class="caption-text">
+                                <h4 class="caption-title">5K Marathon Achievement</h4>
+                                <span class="caption-subtitle">Fitness Milestone</span>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+        </main>
     </div>
 
-    <!-- ===== MAIN CONTENT - CENTERED ===== -->
-    <div class="content-wrapper">
-        <div class="main-content">
-            <h2>Technologist, Foodie, Athletic-ish</h2>
-            <p>
-                Hi, I’m an alumni at UNF with foundational IT knowledge who enjoys working across full stack
-                development, learning scalable tools important on system designs, exploring cybersecurity, and dabbling
-                in AI. When I’m not autodidacting, I’m probably watching a movie, staying active, or planning my next
-                trip — even if it’s just in my head for now. Welcome to my little space on the web.
-            </p>
-            <figure class="photo-gallery">
-                <img src="/assets/orlando.jpg" alt="Trip to Orlando" class="gallery-img" />
-                <figcaption>🏰 Trip to Orlando</figcaption>
-            </figure>
-
-            <figure class="photo-gallery">
-                <img src="/assets/tampa.jpg" alt="Trip to Tampa Busch Gardens" class="gallery-img" />
-                <figcaption>🎢 Trip to Tampa Busch Gardens</figcaption>
-            </figure>
-
-            <figure class="photo-gallery">
-                <img src="/assets/food2.jpg" alt="My favorite dish - Walnut Shrimp" class="gallery-img" />
-                <figcaption>🍤 My Favorite Dish - Walnut Shrimp</figcaption>
-            </figure>
-
-            <figure class="photo-gallery">
-                <img src="/assets/whitesnow.jpg" alt="Drinking hot coffee in Lake Louise" class="gallery-img" />
-                <figcaption>☕ Drinking Hot Coffee in Lake Louise</figcaption>
-            </figure>
-
-            <figure class="photo-gallery">
-                <img src="/assets/marathon.jpg" alt="5K Marathon Achievement" class="gallery-img" />
-                <figcaption>🏃 5K Marathon Achievement</figcaption>
-            </figure>
+    <!-- ===== LIGHTBOX DIALOG MODAL ===== -->
+    <dialog id="photo-lightbox" class="lightbox-modal" aria-label="Photo Preview">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightbox-close-btn" aria-label="Close modal">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="lightbox-image-container">
+                <img id="lightbox-img" src="" alt="Enlarged photo view" />
+            </div>
+            <p id="lightbox-caption" class="lightbox-caption-text"></p>
         </div>
-    </div>
+    </dialog>
 
+    <!-- Interactive script for Lightbox modal -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const modal = document.getElementById('photo-lightbox');
+            const modalImg = document.getElementById('lightbox-img');
+            const modalCaption = document.getElementById('lightbox-caption');
+            const closeBtn = document.getElementById('lightbox-close-btn');
+
+            document.querySelectorAll('.gallery-card').forEach(card => {
+                card.addEventListener('click', () => {
+                    const fullSrc = card.getAttribute('data-full-src');
+                    const caption = card.getAttribute('data-caption');
+                    if (fullSrc && modal) {
+                        modalImg.src = fullSrc;
+                        modalImg.alt = caption || 'Photo';
+                        modalCaption.textContent = caption || '';
+                        modal.showModal();
+                        document.body.style.overflow = 'hidden';
+                    }
+                });
+            });
+
+            const closeModal = () => {
+                if (modal && modal.open) {
+                    modal.close();
+                    document.body.style.overflow = '';
+                }
+            };
+
+            closeBtn?.addEventListener('click', closeModal);
+            modal?.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    closeModal();
+                }
+            });
+            modal?.addEventListener('close', () => {
+                document.body.style.overflow = '';
+            });
+        });
+    </script>
 </body>
 
 </html>
