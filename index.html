@@ -4,77 +4,209 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>John Micah Mercado</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="John Micah Mercado's IT portfolio, CompTIA certifications, and interests in cybersecurity, networking, and systems." />
+    <title>John Micah Mercado | IT &amp; Cybersecurity</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <!-- ===== FIXED LEFT HEADER ===== -->
-    <div class="fixed-header">
-        <img src="/assets/profile.jpg" alt="John Micah Mercado" class="profile-photo" />
+    <aside class="fixed-header" aria-label="Profile and contact links">
+        <div class="profile-block">
+            <img src="assets/profile.jpg" alt="John Micah Mercado" class="profile-photo" />
+            <p class="eyebrow">IT · Networking · Security</p>
+            <h1>John Micah Mercado</h1>
+            <p class="education">Information Technology<br />University of North Florida</p>
+            <p class="tagline">3.96 GPA</p>
+        </div>
 
-        <h1>John Micah Mercado</h1>
-        <h3>Information Technology · University of North Florida</h3>
-        <p class="tagline">3.96 GPA</p>
+        <nav class="section-nav" aria-label="Page sections">
+            <a href="#about">About</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#skills">Skillsets</a>
+            <a href="#interests">Interests</a>
+            <a href="#personal">Beyond IT</a>
+        </nav>
 
-        <div class="social-links">
-            <a href="https://github.com/mercadodevsec">
-                <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"
-                    alt="GitHub" id="github" />
+        <div class="social-links" aria-label="Contact and profiles">
+            <a href="https://github.com/mercadodevsec" aria-label="GitHub profile">
+                <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="GitHub" id="github" />
             </a>
-            <a href="https://www.linkedin.com/in/john-micah-mercado-03611624a/">
-                <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"
-                    alt="LinkedIn" id="linkedin" />
+            <a href="https://www.linkedin.com/in/john-micah-mercado-03611624a/" aria-label="LinkedIn profile">
+                <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn" id="linkedin" />
             </a>
-            <a href="mailto:mikkomercado97@gmail.com">
-                <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"
-                    alt="Email" id="email" />
+            <a href="mailto:mikkomercado97@gmail.com" aria-label="Send email">
+                <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&amp;logo=gmail&amp;logoColor=white" alt="Email" id="email" />
             </a>
-            <a href="/assets/Civilian Resume.pdf">
-                <img src="https://img.shields.io/badge/Resume-0A3A5C?style=for-the-badge&logo=adobe&logoColor=white"
-                    alt="Resume" id="resume" />
+            <a href="assets/Civilian%20Resume.pdf" aria-label="View resume">
+                <img src="https://img.shields.io/badge/Resume-0A3A5C?style=for-the-badge&amp;logo=adobe&amp;logoColor=white" alt="Resume" id="resume" />
             </a>
         </div>
-    </div>
+    </aside>
 
-    <!-- ===== MAIN CONTENT - CENTERED ===== -->
     <div class="content-wrapper">
-        <div class="main-content">
-            <h2>Technologist, Foodie, Athletic-ish</h2>
-            <p>
-                Hi, I’m an alumni at UNF with foundational IT knowledge who enjoys working across full stack
-                development, learning scalable tools important on system designs, exploring cybersecurity, and dabbling
-                in AI. When I’m not autodidacting, I’m probably watching a movie, staying active, or planning my next
-                trip — even if it’s just in my head for now. Welcome to my little space on the web.
-            </p>
-            <figure class="photo-gallery">
-                <img src="/assets/orlando.jpg" alt="Trip to Orlando" class="gallery-img" />
-                <figcaption>🏰 Trip to Orlando</figcaption>
-            </figure>
+        <main class="main-content" id="main-content">
+            <section class="hero" id="about" aria-labelledby="intro-title">
+                <p class="section-kicker">A little about me</p>
+                <h2 id="intro-title">Building a career in <span>IT &amp; cybersecurity.</span></h2>
+                <p class="intro-copy">
+                    I’m a University of North Florida Information Technology alumnus with a strong academic foundation
+                    and CompTIA certifications across support, networking, server, and security. I’m interested in how
+                    technology works behind the scenes—and in helping keep the systems people rely on dependable and secure.
+                </p>
+                <p class="intro-copy">
+                    I’m continuing to grow my knowledge across IT, with a particular interest in cybersecurity and the
+                    networks and systems that make it possible. This site is a snapshot of what I’ve learned, what I’m
+                    exploring, and a few things I enjoy outside of tech.
+                </p>
+            </section>
 
-            <figure class="photo-gallery">
-                <img src="/assets/tampa.jpg" alt="Trip to Tampa Busch Gardens" class="gallery-img" />
-                <figcaption>🎢 Trip to Tampa Busch Gardens</figcaption>
-            </figure>
+            <section class="content-section" id="certifications" aria-labelledby="certifications-title">
+                <div class="section-heading">
+                    <p class="section-kicker">Knowledge foundation</p>
+                    <h2 id="certifications-title">CompTIA certifications</h2>
+                    <p>Credentials spanning core IT support, infrastructure, and security.</p>
+                </div>
+                <div class="certification-grid">
+                    <article class="certification-card">
+                        <span class="certification-mark" aria-hidden="true">A+</span>
+                        <div><p class="certification-label">CompTIA</p><h3>A+</h3></div>
+                    </article>
+                    <article class="certification-card">
+                        <span class="certification-mark" aria-hidden="true">N+</span>
+                        <div><p class="certification-label">CompTIA</p><h3>Network+</h3></div>
+                    </article>
+                    <article class="certification-card">
+                        <span class="certification-mark" aria-hidden="true">S+</span>
+                        <div><p class="certification-label">CompTIA</p><h3>Security+</h3></div>
+                    </article>
+                    <article class="certification-card">
+                        <span class="certification-mark" aria-hidden="true">Srv+</span>
+                        <div><p class="certification-label">CompTIA</p><h3>Server+</h3></div>
+                    </article>
+                </div>
+            </section>
 
-            <figure class="photo-gallery">
-                <img src="/assets/food2.jpg" alt="My favorite dish - Walnut Shrimp" class="gallery-img" />
-                <figcaption>🍤 My Favorite Dish - Walnut Shrimp</figcaption>
-            </figure>
+            <section class="content-section" id="skills" aria-labelledby="skills-title">
+                <div class="section-heading">
+                    <p class="section-kicker">What I’m building on</p>
+                    <h2 id="skills-title">IT skillsets</h2>
+                    <p>Foundational knowledge areas connected to my CompTIA certifications.</p>
+                </div>
+                <div class="skills-grid">
+                    <article class="skill-card">
+                        <span class="skill-index">01 / SUPPORT</span>
+                        <h3>IT support</h3>
+                        <p>Troubleshooting fundamentals across hardware, software, and end-user systems.</p>
+                        <ul class="skill-tags" aria-label="IT support topics">
+                            <li>Troubleshooting</li><li>Hardware</li><li>Operating systems</li>
+                        </ul>
+                    </article>
+                    <article class="skill-card">
+                        <span class="skill-index">02 / NETWORKS</span>
+                        <h3>Networking</h3>
+                        <p>Core concepts for understanding network connectivity and infrastructure.</p>
+                        <ul class="skill-tags" aria-label="Networking topics">
+                            <li>Network fundamentals</li><li>Connectivity</li><li>Infrastructure</li>
+                        </ul>
+                    </article>
+                    <article class="skill-card">
+                        <span class="skill-index">03 / SYSTEMS</span>
+                        <h3>Server systems</h3>
+                        <p>Foundations in server hardware, administration concepts, and virtualization.</p>
+                        <ul class="skill-tags" aria-label="Server systems topics">
+                            <li>Server hardware</li><li>Administration</li><li>Virtualization</li>
+                        </ul>
+                    </article>
+                    <article class="skill-card">
+                        <span class="skill-index">04 / SECURITY</span>
+                        <h3>Security fundamentals</h3>
+                        <p>Principles for reducing risk and protecting systems, access, and information.</p>
+                        <ul class="skill-tags" aria-label="Security topics">
+                            <li>Threat awareness</li><li>Access control</li><li>Risk fundamentals</li>
+                        </ul>
+                    </article>
+                </div>
 
-            <figure class="photo-gallery">
-                <img src="/assets/whitesnow.jpg" alt="Drinking hot coffee in Lake Louise" class="gallery-img" />
-                <figcaption>☕ Drinking Hot Coffee in Lake Louise</figcaption>
-            </figure>
+                <div class="terminal-panel" role="region" aria-label="Interactive portfolio terminal">
+                    <div class="terminal-topbar">
+                        <div class="terminal-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+                        <span class="terminal-title">profile — interactive terminal</span>
+                        <span class="terminal-status">● portfolio</span>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-history" id="terminal-output" role="log" aria-live="polite" aria-relevant="additions">
+                            <p class="terminal-welcome">Type <code>help</code> to see what you can ask about.</p>
+                        </div>
+                        <form class="terminal-input-row" id="terminal-form">
+                            <label class="terminal-prompt" for="terminal-input">john@portfolio <span>~</span> $</label>
+                            <input id="terminal-input" name="command" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="type a command…" aria-label="Terminal command" aria-describedby="terminal-hint" />
+                            <button class="terminal-submit" type="submit">Run <span aria-hidden="true">↵</span></button>
+                        </form>
+                        <p class="terminal-hint" id="terminal-hint">Try: help · skills · certifications · interests · contact</p>
+                    </div>
+                </div>
+            </section>
 
-            <figure class="photo-gallery">
-                <img src="/assets/marathon.jpg" alt="5K Marathon Achievement" class="gallery-img" />
-                <figcaption>🏃 5K Marathon Achievement</figcaption>
-            </figure>
-        </div>
+            <section class="content-section" id="interests" aria-labelledby="interests-title">
+                <div class="section-heading">
+                    <p class="section-kicker">Areas I’m exploring</p>
+                    <h2 id="interests-title">Where technology meets people</h2>
+                </div>
+                <div class="interest-list">
+                    <article class="interest-item">
+                        <span class="interest-number">01</span>
+                        <div><h3>Cybersecurity</h3><p>Learning how to protect information, systems, and the people who depend on them.</p></div>
+                    </article>
+                    <article class="interest-item">
+                        <span class="interest-number">02</span>
+                        <div><h3>Networks &amp; infrastructure</h3><p>Exploring the connections and underlying systems that keep technology running.</p></div>
+                    </article>
+                    <article class="interest-item">
+                        <span class="interest-number">03</span>
+                        <div><h3>IT support &amp; systems</h3><p>Building on core IT knowledge to make everyday technology more reliable and useful.</p></div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="content-section personal-section" id="personal" aria-labelledby="personal-title">
+                <div class="section-heading">
+                    <p class="section-kicker">Off the clock</p>
+                    <h2 id="personal-title">A few things I enjoy</h2>
+                    <p>Technology is a big interest, but it’s not the only one. Here are a few snapshots from life outside the screen.</p>
+                </div>
+                <div class="photo-grid">
+                    <figure class="photo-gallery">
+                        <img src="assets/orlando.jpg" alt="A day out in Orlando" class="gallery-img" loading="lazy" />
+                        <figcaption>Trip to Orlando</figcaption>
+                    </figure>
+                    <figure class="photo-gallery">
+                        <img src="assets/tampa.jpg" alt="Visit to Busch Gardens in Tampa" class="gallery-img" loading="lazy" />
+                        <figcaption>Trip to Tampa Busch Gardens</figcaption>
+                    </figure>
+                    <figure class="photo-gallery">
+                        <img src="assets/food2.jpg" alt="Walnut shrimp, one of my favorite dishes" class="gallery-img" loading="lazy" />
+                        <figcaption>Favorite dish: walnut shrimp</figcaption>
+                    </figure>
+                    <figure class="photo-gallery">
+                        <img src="assets/whitesnow.jpg" alt="Drinking hot coffee in Lake Louise" class="gallery-img" loading="lazy" />
+                        <figcaption>Hot coffee in Lake Louise</figcaption>
+                    </figure>
+                    <figure class="photo-gallery">
+                        <img src="assets/marathon.jpg" alt="5K marathon achievement" class="gallery-img" loading="lazy" />
+                        <figcaption>5K marathon achievement</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <footer class="page-footer">
+                <p>Thanks for stopping by.</p>
+                <a href="mailto:mikkomercado97@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
+            </footer>
+        </main>
     </div>
-
+    <script src="script.js" defer></script>
 </body>
 
 </html>
