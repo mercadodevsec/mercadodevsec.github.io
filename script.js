@@ -32,7 +32,11 @@ if (terminalForm && terminalInput && terminalOutput) {
             'Security: threat awareness, access control, and risk fundamentals.'
         ],
         certs: [
+<<<<<<< HEAD
             'CompTIA A+ · Network+ · Security+ · Server+ · CySA+ '
+=======
+            'CompTIA A+ · Network+ · Server+ · Security+ · CySA+'
+>>>>>>> dd449be08ffa1fbba30a0e86b52c47d87394380b
         ],
         interests: [
             'Cybersecurity',
