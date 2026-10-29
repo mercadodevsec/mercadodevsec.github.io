@@ -207,9 +207,9 @@ a { color: inherit; }
 
 .certification-mark {
     display: grid;
-    width: 54px;
+    width: 100px;
     height: 54px;
-    flex: 0 0 54px;
+    flex: 0 0 100px;
     place-items: center;
     border: 1px solid #d4e0ff;
     border-radius: 12px;
