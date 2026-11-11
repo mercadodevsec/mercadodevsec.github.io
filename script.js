@@ -11,36 +11,38 @@ if (terminalForm && terminalInput && terminalOutput) {
             'Available commands:',
             '  whoami          A quick introduction',
             '  education       Education and GPA',
-            '  skills          IT knowledge areas',
-            '  certifications  CompTIA certifications',
+            '  skills          IT and cybersecurity knowledge areas',
+            '  certs           CompTIA certifications',
             '  interests       Current areas of interest',
-            '  contact         Email address',
+            '  contact         Email and LinkedIn',
             '  clear           Clear the terminal'
         ],
         whoami: [
             'John Micah Mercado',
-            'Information Technology alumnus focused on IT and cybersecurity.'
+            'IT professional and U.S. Army veteran focused on cybersecurity and security operations (SOC).'
         ],
         education: [
-            'Information Technology · University of North Florida',
+            'B.S. Information Technology · University of North Florida (2026)',
             'GPA: 3.96'
         ],
         skills: [
-            'IT support: troubleshooting, hardware, and operating system fundamentals.',
-            'Networking: network fundamentals, connectivity, and infrastructure.',
-            'Server systems: server hardware, administration concepts, and virtualization.',
-            'Security: threat awareness, access control, and risk fundamentals.'
+            'Security: network traffic analysis (Wireshark), vulnerability assessment, intrusion detection, digital forensics, session security, and SQL injection remediation.',
+            'Systems: Linux administration, Bash scripting, server administration, and cloud computing.',
+            'Networking: TCP/IP, LAN, packet analysis, and network troubleshooting.',
+            'Development: Python, Java, Kotlin, C#, JavaScript, TypeScript, SQL, React, Express, and Git.',
+            'IT support: systematic troubleshooting, root-cause analysis, and technical documentation.'
         ],
         certs: [
             'CompTIA A+ · Network+ · Server+ · Security+ · Linux+ · CySA+'
         ],
         interests: [
-            'Cybersecurity',
-            'Networks and infrastructure',
-            'IT support and systems'
+            'Cybersecurity and security operations (SOC)',
+            'Network analysis and defense',
+            'Linux, systems, and IT support'
         ],
         contact: [
-            'Email: mikkomercado97@gmail.com'
+            'Email: mikkomercado97@gmail.com',
+            'LinkedIn: linkedin.com/in/john-micah-mercado-03611624a'
         ]
     };
 
